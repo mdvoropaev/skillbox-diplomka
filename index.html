@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Дипломный проект | Воропаев.М.Д</title>
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta name="robots" content="none"/>
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=320, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- Project-style -->
+    <link rel="stylesheet" type="text/css" href="style/styles.css">
+    <!-- Fontawesome-style -->
+    <link rel="stylesheet" type="text/css" href="fontawesome-free-5.11.2-web/css/all.min.css">
+    <!-- Link-favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon_package_v0.16/safari-pinned-tab.svg" color="#ff4e2e">
+    <!-- Slick-slider -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <!-- Scrips -->
+    <script src="script/jquery-3.4.1.min.js"></script>
+    <script src="script/popup-script.js"></script>
+    <script src="script/common.js"></script>
+    <script src="slick/slick.min.js"></script>
+</head>
+
+<body class="page">
+    <!-- Popup-window -->
+    <div class="popup-window">
+        <div class="popupItem">
+            <div class="popupItem__container">
+                <!-- request-a-call -->
+                <div class="popupItem__popup-request-a-call">
+                    <div class="popupItem__header">
+                        <h4 class="popupItem__title">Заполните заявку</h4>
+                        <button class="popupItem__btn button close-icon" title="Закрыть">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="popup-body">
+                        <form action="https://echo.htmlacademy.ru/" method="POST">
+                            <div class="form-box">
+                                <label for="form-name-one" class="form-label">Ваше имя:</label>
+                                <input type="text" class="setting-form" id="form-name-one" name="name"
+                                    placeholder="Пример Примеров" required>
+                            </div>
+                            <div class="form-box">
+                                <label for="form-phone-one" class="form-label">Телефон:</label>
+                                <input type="tel" class="setting-form" id="form-phone-one" name="tel"
+                                    data-mask="+7(000)000-0000" placeholder="+7(000)000-0000" required=""
+                                    autocomplete="off" maxlength="15" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                            </div>
+                            <div class="btm-form-setting">
+                                <button class="popupItem__btn button request-a-call-custom popup-btm-form btm-form-setting form-label"
+                                    title="Заказать звонок">Заказать звонок</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- find out the price -->
+                <div class="popupItem__find-out-the-price">
+                    <div class="popupItem__header">
+                        <h4 class="popupItem__title">Заполните заявку</h4>
+                        <button class="popupItem__btn button close-icon" title="Закрыть">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="popup-body">
+                        <form action="https://echo.htmlacademy.ru/" method="POST">
+                            <div class="form-box">
+                                <label for="form-name-two" class="form-label">Ваше имя:</label>
+                                <input type="text" class="setting-form" id="form-name-two" name="name"
+                                    placeholder="Пример Примеров" required>
+                            </div>
+                            <div class="form-box">
+                                <label for="form-email-two" class="form-label">Ваш email:</label>
+                                <input type="email" class="setting-form" id="form-email-two" name="email"
+                                    placeholder="email@emai.ru" required>
+                            </div>
+                            <div class="form-box">
+                                <label for="form-phone-two" class="form-label">Телефон:</label>
+                                <input type="tel" class="setting-form" id="form-phone-two" name="tel"
+                                    data-mask="+7(000)000-0000" placeholder="+7(000)000-0000" required=""
+                                    autocomplete="off" maxlength="15" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                            </div>
+                            <div class="form-box">
+                                <label for="custom-select" class="form-label">Хочу узнать стоимость&nbsp;на:</label>
+                                <select id="custom-select" class="setting-form" name="select">
+                                    <option value="no-select">Не выбрано значение</option>
+                                    <option value="one-select">Вёрстка лендинг—страниц и сайтов любой сложности</option>
+                                    <option value="two-select">Адаптивная вёрстка под все браузеры и устройства</option>
+                                    <option value="three-select">Frontend—разработка и программирование</option>
+                                    <option value="four-select">Исправление и доработка существующей вёрстки</option>
+                                </select>
+                            </div>
+                            <div class="form-box file--input--box">
+                                <label for="form-file" class="form-label inputfile--style"><i class="fas fa-arrow-alt-circle-down down-icon-style"></i>  Вложить техническое задание</label><br>
+                                <input type="file" id="form-file" class="inputfile" name="file">
+                            </div>
+                            <div class="btm-form-setting">
+                                <button class="popupItem__btn button request-a-call-custom popup-btm-form btm-form-setting form-label"
+                                    title="Заказать звонок">Отправить заявку</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- order a project -->
+                <div class="popupItem__order-a-project">
+                    <div class="popupItem__header">
+                        <h4 class="popupItem__title">Заполните заявку</h4>
+                        <button class="popupItem__btn button close-icon" title="Закрыть">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="popup-body">
+                        <form action="https://echo.htmlacademy.ru/" method="POST">
+                            <div class="form-box">
+                                <label for="form-name-three" class="form-label">Ваше имя:</label>
+                                <input type="text" class="setting-form" id="form-name-three" name="name"
+                                    placeholder="Пример Примеров" required>
+                            </div>
+                            <div class="form-box">
+                                <label for="form-email-three" class="form-label">Ваш email:</label>
+                                <input type="email" class="setting-form" id="form-email-three" name="email"
+                                    placeholder="email@emai.ru" required>
+                            </div>
+                            <div class="form-box">
+                                <label for="form-phone-three" class="form-label">Телефон:</label>
+                                <input type="tel" class="setting-form" id="form-phone-three" name="tel"
+                                    data-mask="+7(000)000-0000" placeholder="+7(000)000-0000" required=""
+                                    autocomplete="off" maxlength="15" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                            </div>
+                            <div class="form-box">
+                                <label for="form-textarea" class="form-label">Ваше сообщение:</label><br>
+                                <textarea maxlength="1000" required="required" rows="10" cols="46" id="form-textarea"></textarea>
+                            </div>
+                            <div class="btm-form-setting">
+                                <button class="popupItem__btn button request-a-call-custom popup-btm-form btm-form-setting form-label"
+                                    title="Заказать звонок">Отправить заявку</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- info-button -->
+                <div class="popupItem__info-masters">
+                    <div class="popupItem__header">
+                        <h4 class="popupItem__title">О разработчике</h4>
+                        <button class="popupItem__btn button close-icon" title="Закрыть">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="popup-body">
+                        <div class="form-box">
+                            <p>Данный проект был сделан Михаилом Воропаевым, в&nbsp;рамках дипломной работы в&nbsp;университете Skillbox.</p>
+                        </div>
+                    </div>
+                    <div class="popup-footer">
+                        <div class="form-box-footer bottom-popup-box">
+                            <div class="popup-footer-colm">
+                                <div class="row row-ft phone-box popup-phone-box">
+                                    <i class="fas fa-phone-alt icon-phone"></i>
+                                    <a href="tel:+74999955577" rel="nofollow" class="footer_contact-custom"
+                                        title="Телефон для связи">+7 (499) 995-55-77</a>
+                                </div>
+                                <div class="row row-ft mail-box">
+                                    <i class="fas fa-envelope icon-mail"></i>
+                                    <a href="mailto:dmitry@alekseev.com" rel="nofollow" class="footer_contact-custom"
+                                        title="Email для связи">dmitry@alekseev.com
+                                    </a>
+                                </div>    
+                            </div>
+                            <address class="social-sprite-icons popup-sprite-icons">
+                                <a href="https://vk.com/" class="vk-icon" target="blank" title="Я Вконтакте">
+                                    <img src="img/social-sprite.png" alt="Я Вконтакте">
+                                </a>
+                                <a href="https://www.facebook.com/" class="fb-icon" target="blank" title="Я в Фэйсбук">
+                                    <img src="img/social-sprite.png" alt="Я в Фэйсбук">
+                                </a>
+                                <a href="https://twitter.com/?lang=ru" class="twitter-icon" target="blank"
+                                    title="Я в Твиттер">
+                                    <img src="img/social-sprite.png" alt="Я в Твиттер">
+                                </a>
+                                <a href="https://www.instagram.com/" class="inst-icon" target="blank"
+                                    title="Я в Инстаграмм">
+                                    <img src="img/social-sprite.png" alt="Я в Инстаграмм">
+                                </a>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header__menu -->
+    <header class="header page__header">
+        <div class="header-box">
+            <div class="container">
+                <nav id="left-nav-menu-container" class="header-nav-menu">
+                    <button class="button header__burger">
+                        <span class="button__inner"></span>
+                        <span class="button__inner"></span>
+                        <span class="button__inner"></span>
+                    </button>
+                    <div class="header--desktop">
+                        <div class="nav-menu-wrapper-d">
+                            <ul class="menu">
+                                <li class="menu__item">
+                                    <a href="#one" class="menu__link header__nav-link" title="Услуги">Услуги</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#two" class="menu__link header__nav-link" title="Портфолио">Портфолио</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#three" class="menu__link header__nav-link" title="Стоимость">Стоимость</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header--mobile">
+                        <div class="nav-menu-wrapper-m">
+                            <ul class="menu">
+                                <li class="menu__nav-item">
+                                    <button class="button header__close">
+                                        <span class="button__inner"></span>
+                                        <span class="button__inner"></span>
+                                    </button>
+                                </li>
+                                <li class="menu__nav-item">
+                                    <a href="#one" class="header__nav-link" title="Услуги">Услуги</a>
+                                </li>
+                                <li class="menu__nav-item">
+                                    <a href="#two" class="header__nav-link" title="Портфолио">Портфолио</a>
+                                </li>
+                                <li class="menu__nav-item">
+                                    <a href="#three" class="header__nav-link" title="Стоимость">Стоимость</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <ul id="right-menu-container" class="header_phone-list">
+                    <li class="header_phone-item">
+                        <a href="tel:+74999955577" rel="nofollow" class="header_phone-custom"
+                            title="Телефон для связи">+7 (499) 995-55-77</a>
+                    </li>
+                    <li class="request-a-call">
+                        <button id="popup-jungl-button" class="button request-a-call-custom styles-call-botton-off" title="Заказать звонок">Заказать звонок</button>
+                        <button id="popup-jungl-button-mobile" class="button request-a-call-custom styles-call" title="Заказать звонок"><i class="fas fa-phone-alt icon-phone call-icon-head"></i></button>    
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main-page page">
+
+        <!-- Title -->
+        <section class="page-head">
+            <div class="bg-page">
+                <span class="bg-element-one special-select show-effect"></span>
+                <span class="bg-element-div_2 special-select-div show-effect"></span>
+                <span class="bg-element-div_3 special-select-lattice show-effect"></span>
+                <span class="bg-element-div_4 special-select-div_duble_big show-effect"></span>
+                <span class="bg-element-div_5 special-select-slash show-effect"></span>
+            </div>
+            <div class="bg-page--transformer">
+                <span class="element anim bg-element-one-trans special-select"></span>
+                <span class="element anim bg-element-div_2-trans special-select-div"></span>
+                <span class="element anim bg-element-div_3-trans special-select-lattice"></span>
+                <span class="element anim bg-element-div_4-trans special-select-div_duble_big"></span>
+                <span class="element anim bg-element-div_5-trans special-select-slash"></span>
+            </div>
+            <div class="container">
+                <div class="title-box">
+                    <div class="box-info-title">
+                        <h1 class="box-info__name">Дмитрий Алексеев</h1>
+                        <p class="box-info__title">Frontend-разработчик и&nbsp;веб верстальщик</p>
+                        <button id="info__button" class="button box-info__button" title="Узнать больше">Узнать больше</button>
+                    </div>
+                    <div class="box-info-img">
+                        <img class="img-title" src="img/danila_photo_2.png" alt="Дмитрий Алексеев">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service_info -->
+        <section class="service_section" id="one">
+            <div class="container center-elements">
+                <div class="row">
+                    <div class="col text-box">
+                        <h2 class="title-h2">Что я делаю</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col column_service">
+                        <div class="box-icon-text">
+                            <img src="img/monitor.png" alt="Вёрстка лендинг">
+                            <p class="info-service">Вёрстка лендинг&mdash;страниц и&nbsp;сайтов любой сложности</p>
+                        </div>
+                    </div>
+                    <div class="col column_service">
+                        <div class="box-icon-text">
+                            <img src="img/responsive.png" alt="Адаптивная вёрстка">
+                            <p class="info-service">Адаптивная вёрстка под все браузеры и&nbsp;устройства</p>
+                        </div>
+                    </div>
+                    <div class="col column_service">
+                        <div class="box-icon-text">
+                            <img src="img/programming.png" alt="Frontend разработка">
+                            <p class="info-service">Frontend&mdash;разработка и&nbsp;программирование</p>
+                        </div>
+                    </div>
+                    <div class="col column_service">
+                        <div class="box-icon-text">
+                            <img src="img/coding.png" alt="Исправление и доработка вёрстки">
+                            <p class="info-service">Исправление и&nbsp;доработка существующей вёрстки</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col button-box">
+                        <button id="popup-prices" class="button box-info__button" title="Узнать стоимость">Узнать
+                            стоимость</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work-examples -->
+        <section class="work-examples" id="two">
+            <div class="container center-elements">
+                <div class="row">
+                    <div class="col text-box">
+                        <h2 class="title-h2">Примеры моих работ</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="box-slider">
+                        <div class="slide-list sl">
+                            <div class="slide-item sl__slide">
+                                <img class="img-slide__exemle sl__img" src="slider-img/Layer_2.jpg"
+                                    alt="пример сайта психолога Веры Антоновой">
+                                <p class="text-slide__exemle sl__desc">Сайт психолога Веры Антоновой</p>
+                            </div>
+                            <div class="slide-item sl__slide">
+                                <img class="img-slide__exemle sl__img" src="slider-img/Layer_1.jpg"
+                                    alt="пример сайта детской одежды">
+                                <p class="text-slide__exemle sl__desc">Сайт магазина детской одежды</p>
+                            </div>
+                            <div class="slide-item sl__slide">
+                                <img class="img-slide__exemle sl__img" src="slider-img/Layer_3.jpg"
+                                    alt="пример сайта &laquo;Рыболов&raquo;">
+                                <p class="text-slide__exemle sl__desc">Сайт магазина &laquo;Рыболов&raquo;</p>
+                            </div>
+                            <div class="slide-item sl__slide">
+                                <img class="img-slide__exemle sl__img" src="slider-img/Layer_4.jpg"
+                                    alt="пример сайта &laquo;Продажа авто с пробегом&raquo;">
+                                <p class="text-slide__exemle sl__desc">Сайт &laquo;Продажа авто с&nbsp;пробегом&raquo;
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col button-box">
+                        <button id="popup-project" class="button box-info__button" title="Заказать проект">Заказать
+                            проект</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advert -->
+        <section class="advert-setting" id="three">
+            <div class="bg-page-section-three bg-page-fotter">
+                <span class="bg-element-div-one special-select-btm show-effect"></span>
+                <span class="bg-element-div_two special-select-div-btm show-effect"></span>
+                <span class="bg-element-div_three special-select-lattice-btm show-effect"></span>
+                <span class="bg-element-div_four special-select-div_duble_big-btm show-effect"></span>
+                <span class="bg-element-div_five special-select-slash-btm show-effect"></span>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col advert-title-box">
+                        <h3 class="title-h3">Адаптивная вёрстка под все устройства
+                            и&nbsp;браузеры от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа.*</h3>
+                        <p class="price-info">* Срок и&nbsp;стоимость могут отличаться от&nbsp;заявленных
+                            и&nbsp;рассчитываются индивидуально,
+                            в&nbsp;зависимости от&nbsp;сложности задач.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer page__footer">
+        <!-- Footer-top-section -->
+        <section class="footer-block">
+            <div class="container footer-container">
+                <div class="row">
+                    <div class="col-footer col-ft-one">
+                        <div class="row row_ft">
+                            <a href="#one" class="nav-footer" title="Услуги">Услуги</a>
+                        </div>
+                        <div class="row row_ft">
+                            <a href="#two" class="nav-footer" title="Портфолио">Портфолио</a>
+                        </div>
+                        <div class="row row_ft">
+                            <a href="#three" class="nav-footer" title="Стоимость">Стоимость</a>
+                        </div>
+                    </div>
+                    <div class="col-footer col-ft-two">
+                        <div class="row row-ft phone-box">
+                            <i class="fas fa-phone-alt icon-phone"></i>
+                            <a href="tel:+74999955577" rel="nofollow" class="footer_contact-custom"
+                                title="Телефон для связи">+7 (499) 995-55-77</a>
+                        </div>
+                        <div class="row row-ft mail-box">
+                            <i class="fas fa-envelope icon-mail"></i>
+                            <a href="mailto:dmitry@alekseev.com" rel="nofollow" class="footer_contact-custom"
+                                title="Email для связи">dmitry@alekseev.com</a>
+                        </div>
+                    </div>
+                    <div class="col-footer col-ft-three">
+                        <div class="row row-ft row-right btn-box-style">
+                            <button id="popup-jungl-button-2" class="button request-a-call-custom botton-style-footer"
+                                title="Заказать звонок">Заказать звонок</button>
+                        </div>
+                        <div class="row row-ft row-right">
+                            <address class="social-sprite-icons">
+                                <a href="https://vk.com/" class="vk-icon" target="blank" title="Я Вконтакте">
+                                    <img src="img/social-sprite.png" alt="Я Вконтакте">
+                                </a>
+                                <a href="https://www.facebook.com/" class="fb-icon" target="blank" title="Я в Фэйсбук">
+                                    <img src="img/social-sprite.png" alt="Я в Фэйсбук">
+                                </a>
+                                <a href="https://twitter.com/?lang=ru" class="twitter-icon" target="blank"
+                                    title="Я в Твиттер">
+                                    <img src="img/social-sprite.png" alt="Я в Твиттер">
+                                </a>
+                                <a href="https://www.instagram.com/" class="inst-icon" target="blank"
+                                    title="Я в Инстаграмм">
+                                    <img src="img/social-sprite.png" alt="Я в Инстаграмм">
+                                </a>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-bottom-section -->
+        <section class="copyright-footer-bottom">
+            <div class="container copyright-box">
+                <div class="row">
+                    <small class="col copyright-text">&copy;&nbsp;Дмитрий Алексеев, 2016&nbsp;&mdash; 2018</small>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
