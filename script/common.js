@@ -61,6 +61,10 @@ $(document).ready(function(){
       
     });
 
+    $(document).ready(function() {
+      $("#form-phone-one, #form-phone-two, #form-phone-three").mask("+7 (999) 99-99-999");
+    });
+
     
      
 

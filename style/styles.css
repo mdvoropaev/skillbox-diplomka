@@ -602,9 +602,8 @@ img {
     font-size: 29px;
     font-weight: 600;
     -webkit-transform: rotate(-13deg);
-    -moz-transform: rotate(-90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-    -o-transform: rotate(-90deg);
+    -moz-transform: rotate(-13deg);
+    -o-transform: rotate(-13deg);
 }
 
 .bg-element-div_2-trans {
@@ -643,9 +642,8 @@ img {
     font-size: 49px;
     font-weight: 600;
     -webkit-transform: rotate(16deg);
-    -moz-transform: rotate(-16deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=16);
-    -o-transform: rotate(-16deg);
+    -moz-transform: rotate(16deg);
+    -o-transform: rotate(16deg);
 }
 
 .bg-element-div_3-trans {
@@ -682,9 +680,8 @@ img {
     font-size: 40px;
     font-weight: 600;
     -webkit-transform: rotate(23deg);
-    -moz-transform: rotate(-23deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=23);
-    -o-transform: rotate(-23deg);
+    -moz-transform: rotate(23deg);
+    -o-transform: rotate(23deg);
 }
 
 .bg-element-div_4-trans {
@@ -723,9 +720,7 @@ img {
     font-weight: 600;
     -webkit-transform: rotate(-21deg);
     -moz-transform: rotate(-21deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=21);
     -o-transform: rotate(-21deg);
-    -webkit-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=21);
 }
 
 .bg-element-div_5-trans {
@@ -1013,9 +1008,8 @@ img {
     font-size: 48px;
     font-weight: 600;
     -webkit-transform: rotate(28deg);
-    -moz-transform: rotate(-90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-    -o-transform: rotate(-90deg);
+    -moz-transform: rotate(28deg);
+    -o-transform: rotate(28deg);
 }
 
 .special-select-btm::before {
@@ -1049,7 +1043,6 @@ img {
     font-weight: 600;
     -webkit-transform: rotate(18deg);
     -moz-transform: rotate(18deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=18);
     -o-transform: rotate(18deg);
 }
 
@@ -1074,7 +1067,6 @@ img {
     -webkit-transform: rotate(-21deg);
     -moz-transform: rotate(-21deg);
     -o-transform: rotate(-21deg);
-    -webkit-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-21deg);
 }
 
 .special-select-lattice-btm::after {
@@ -1097,7 +1089,6 @@ img {
     -webkit-transform: rotate(20deg);
     -moz-transform: rotate(20deg);
     -o-transform: rotate(20deg);
-    -webkit-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=20deg);
 }
 
 .special-select-div_duble_big-btm::after {
@@ -1120,7 +1111,6 @@ img {
     -webkit-transform: rotate(-20deg);
     -moz-transform: rotate(-20deg);
     -o-transform: rotate(-20deg);
-    -webkit-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-20deg);
 }
 
 .special-select-slash-btm::before {
@@ -1270,21 +1260,26 @@ img {
     background-color: #1f1f2491;
     z-index: 10;
     display: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .popupItem {
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 55%;
+    transform: translate(-50%, -55%);
     background-color: #fbfbfb;
     padding: 0.9375rem;
     border: 1px solid #f82370;
+    -webkit-transform: translate(-50%, -55%);
+    -moz-transform: translate(-50%, -55%);
+    -ms-transform: translate(-50%, -55%);
+    -o-transform: translate(-50%, -55%);
 }
 
 .popupItem__container {
     margin: 0 auto;
-    padding: 0.9375rem 0;
 }
 
 .popupItem__popup-request-a-call,
@@ -1353,11 +1348,11 @@ img {
 }
 
 .down-icon-style {
-    background-image: #fff !important;
     color: #fff !important; 
 }
 
 .form-box textarea {
+    width: 100%;
     color: #8993ad;
     background-color: #fff;
     background-clip: padding-box;
@@ -1387,7 +1382,7 @@ img {
 
 
 .btm-form-setting {
-    margin-top: 2.1875rem;
+    margin-top: 1rem;
     text-align: center;
 }
 
@@ -1426,6 +1421,14 @@ img {
     overflow: hidden;
     position: absolute;
     z-index: -1;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 }
 
 
@@ -1745,9 +1748,8 @@ img {
         left: 363px;
         font-size: 30px;
         -webkit-transform: rotate(13deg);
-        -moz-transform: rotate(-13deg);
-        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=13);
-        -o-transform: rotate(-13deg);
+        -moz-transform: rotate(13deg);
+        -o-transform: rotate(13deg);
     }
 
     .special-select-div_duble_big::after {
@@ -2030,7 +2032,6 @@ img {
         z-index: 1;
         -webkit-transform: rotate(19deg);
         -moz-transform: rotate(19deg);
-        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=19);
         -o-transform: rotate(19deg);
     }
 
@@ -2047,7 +2048,6 @@ img {
         z-index: 1;
         -webkit-transform: rotate(-34deg);
         -moz-transform: rotate(-34deg);
-        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-34);
         -o-transform: rotate(-34deg);
     }
 
@@ -2172,6 +2172,11 @@ img {
         border: 1px solid #ff4e2e;
     }
 
+    .popupItem {
+        top: 58%;
+        width: 100%;
+    }    
+
 }
 
 @media (max-width: 420px) {
@@ -2227,7 +2232,6 @@ img {
         z-index: 1;
         -webkit-transform: rotate(19deg);
         -moz-transform: rotate(19deg);
-        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=19);
         -o-transform: rotate(19deg);
     }
     
@@ -2244,7 +2248,6 @@ img {
         z-index: 1;
         -webkit-transform: rotate(-34deg);
         -moz-transform: rotate(-34deg);
-        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-34);
         -o-transform: rotate(-34deg);
     }
 
@@ -2319,7 +2322,6 @@ img {
         z-index: 1;
         -webkit-transform: rotate(19deg);
         -moz-transform: rotate(19deg);
-        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=19);
         -o-transform: rotate(19deg);
     }
 
@@ -2338,7 +2340,14 @@ img {
         -webkit-transform: rotate(-34deg);
         -moz-transform: rotate(-34deg);
         -o-transform: rotate(-34deg);
-        -webkit-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-34);
+    }
+
+
 }
 
+@media (max-width: 325px) {
+    .popupItem {
+        top: 65%;
+        width: 100%;
+    }
 }
